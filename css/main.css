@@ -38,7 +38,11 @@ img {
 h3, h4 {font-family: 'Poppins', sans-serif;
     margin: 20px 0;
     font-size: 1.125em;}
-input {
+input { 
+    background-color: #f9564f;
+    border: 1px solid #faa32e;
+    border-radius: 10px;
+    box-shadow: 2px yellow;
 
 }
 
@@ -380,7 +384,7 @@ figure {margin: 0;}
     }
     .menu {
         flex-flow: row wrap;
-        width: 20%;
+        width: 100%;
         justify-content: space-around;
     }
     .menu-item img {

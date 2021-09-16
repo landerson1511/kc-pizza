@@ -1,0 +1,396 @@
+/* Base Styles */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1em;
+    text-align: left;
+
+}
+p {font-size: .875em;
+    line-height: 1.285em;}
+
+.content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+h3, h4 {font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+    font-size: 1.125em;}
+input {
+
+}
+
+/*-------------------------- Header & Footer ----------------------------------*/
+
+header,
+footer {
+    background-color: #003049;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.header-divider {
+    background: #faa32e;
+    height: 1px;
+    width: 100%;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    font-size: 1.125em;
+}
+
+footer {
+    flex-direction: column;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
+
+footer .contact {
+    margin-bottom: 50px;
+}
+
+footer .footer-content {
+    display:;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column wrap;
+}
+
+footer .hours {
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+footer .copyright {
+    width: 100%;
+}
+
+
+
+/*---------------------------------------- Hero-Area -----------------------------------------*/
+
+.hero-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.video-area {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.headline {
+    text-align: center;
+    font-size: 2em;
+    z-index: 1;
+    color: #fff
+    
+}
+
+.video-container {
+    position: absolute;
+    width: 100%;
+}
+
+
+/*---------------------------------------------------- Menu -----------------------------------------------*/
+.menu-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    background: #f9564f;
+}
+
+.menu-divider {
+    border: 1px solid black;
+    width: 90%;
+}
+
+.menu-area h3 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+/* ==========================================================================
+   About page
+   ========================================================================== */
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: #f9564f;
+}
+
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+   
+/* ==========================================================================
+   Contact page
+   ========================================================================== */
+.contact-section {
+    background-color: #f9564f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+.contact-section h2 {
+    text-align: center;
+}
+
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+
+figure {margin: 0;}
+
+
+   .map figure {
+    padding-bottom: 125%;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    position: relative;
+}
+
+.map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------- Tablet Styles -------------------------------*/
+@media only screen and (min-width:768px) {
+
+    /* General Styles */
+    .content-wrapper {max-width: 640px;
+    margin: 100px 0;}
+
+
+
+    h2 {font-size: 2.25em;
+        line-height: 1.333;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
+
+
+    /*--------------------------------------------- Header ---------------------------------------*/
+    .header-divider {
+        display: none;
+    }
+
+    header {
+        justify-content: space-around;
+        padding: 33px;
+    }
+
+    header .content-wrapper {
+        width: 100;
+        justify-content: space-between;
+    }
+
+    header nav {
+        width: 50%;
+    }
+
+    header nav ul {
+        justify-content: space-between;
+    }
+
+
+
+    /*-------------------------------------------- Menu -------------------------------------------*/
+    .menu-area {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    
+    }
+
+    .menu {
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .menu-item img {
+        width: 300px;
+        height: 300px;
+        display: flex;
+    }
+
+    /*------------------------------- Footer ---------------------*/
+
+    footer .content-wrapper {
+        width: 65%;
+        margin: 100px 0;
+    }
+
+    footer .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    footer .contact {
+        margin-bottom: 0;
+    }
+
+    footer .hours {
+        margin-bottom: 18px;
+    }
+}
+
+
+
+
+
+
+/*--------------------------------- Desktop Styles -------------------------------*/
+
+@media only screen and (min-width:1200px) {
+
+
+    .menu-area {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        
+    }
+    .menu {
+        flex-flow: row wrap;
+        width: 20%;
+        justify-content: space-around;
+    }
+    .menu-item img {
+        width: 250px;
+        height: 250px;
+        display: flex;
+    }
+
+
+.map figure {
+    padding-bottom: 37.5%;}
+
+}
